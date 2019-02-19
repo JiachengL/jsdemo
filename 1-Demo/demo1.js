@@ -34,4 +34,4 @@ function sayHello() {
 const sayHello2 = name => console.log(`Hello ${name}`);
 
 const greet = (name, message) => console.log(`Hello ${name}, ${message}`);
-console.log(greet);
+greet(name, message);
