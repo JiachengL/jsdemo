@@ -35,3 +35,4 @@ const { name, address, hobbies } = profile;
 const { street, city } = profile.address;
 
 //console.log(`street: ${street}`);
+console.log(`city: ${profile.address.city}`);
