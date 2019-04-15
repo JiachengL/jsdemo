@@ -7,14 +7,14 @@ const codeBlocker = () => {
 
    
     // when we wrap it in resolved promise, it will happen after the sync code
-return Promise.resolve().then(v => {
-    let i = 0;
-    while (i < 1000000000) { i++;}
+    return Promise.resolve().then(v => {
+        let i = 0;
+        while (i < 1000000000) { i++;}
 
-    // however, creating promise is still happening on main thread, while loop still blocks,
-    // and resolve is the microtask
-    return('billion loops is done');
-})
+        // however, creating promise is still happening on main thread, while loop still blocks,
+        // and resolve is the microtask
+        return('billion loops is done');
+    })
 
 }
 
